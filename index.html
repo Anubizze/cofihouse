@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/iconcofe.png">
+    <title>Добро пожаловать в кофейню!</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home"><i class="fas fa-home"></i> Главная</a></li>
+            <li><a href="#about"><i class="fas fa-coffee"></i> О кофе</a></li>
+            <li><a href="#catalog"><i class="fas fa-list-alt"></i> Меню</a></li>
+            <li><a href="zernashop.html"><i class="fas fa-shopping-bag"></i> Магазин зерен</a></li>
+            <li><a href="#vacancies"><i class="fas fa-briefcase"></i> Вакансии</a></li>
+            <li><a href="#contacts"><i class="fas fa-phone-alt"></i> Контакты</a></li>
+        </ul>
+        <div class="overlay"></div>
+    </nav>
+    <div class="pimg1" id="home">
+        <span class="ptext">Cofehouse</span>
+    </div>
+<div class="banner">
+    <div class="banner-content">
+        <h1>🔥 Акция недели!</h1>
+        <p>Купи 2 кофе — получи третий бесплатно ☕</p>
+        
+        <a href="#catalog" onclick="scrollToCatalogAndOpenModal(event)">Заказать сейчас</a>
+    </div>
+</div>
+    
+<section class="section light" id="about">
+    <h2>У нас самые вкусные кофе с качественными зернами</h2>
+    <div class="columns">
+    <div class="column card">
+    <p>Наш кофе насыщенный и ароматный — только отборные зёрна с лучших плантаций Бразилии, Колумбии и Эфиопии.</p>
+    </div>
+    <div class="column card">
+    <h3>Почему наш кофе особенный</h3>
+    <ul>
+        <li><strong>100% арабика</strong> — мягкий вкус с кислинкой и фруктовыми нотами</li>
+        <li><strong>Обжарка в день заказа</strong> — свежесть и яркий аромат</li>
+        <li><strong>Ручная сортировка</strong> — никакого брака и примесей</li>
+    </ul>
+    </div>
+    <div class="column card">
+    <h3>Попробуйте сами</h3>
+    <ul>
+        <li><strong>Эспрессо</strong> — густая крема, бархатистый вкус</li>
+        <li><strong>Латте</strong> — нежное молоко и плотный кофе</li>
+        <li><strong>Фильтр-кофе</strong> — карамельные оттенки, чистый вкус</li>
+    </ul>
+    <p class="cta">Закажите сейчас — и кофе будет у вас уже завтра!</p>
+    </div>
+    </div>
+</section>
+
+
+    <div class="pimg2">
+        <span class="ptext">У нас только премиальные сорта — для истинных ценителей вкуса!</span>
+    </div>
+
+    <section class="section light" id="beans">
+    <h2>Ассортимент зёрен</h2>
+    <div class="bean-columns">
+    <div class="bean-column card">
+    <h3>Эспрессо-смеси</h3>
+    <ul>
+        <li><strong>Итальянская классика</strong> — плотный, с горьковато-шоколадными нотами.</li>
+        <li><strong>Бразилия Сантос</strong> — ореховый оттенок и долгое послевкусие.</li>
+        <li><strong>Колумбия Супремо</strong> — яркая кислинка, аромат тропических фруктов.</li>
+    </ul>
+    </div>
+    <div class="bean-column card">
+    <h3>Моносорта (100% арабика)</h3>
+    <ul>
+        <li><strong>Эфиопия Иргачефф</strong> — цветочные и цитрусовые ноты.</li>
+        <li><strong>Кения AA</strong> — ягодный вкус с винными акцентами.</li>
+        <li><strong>Гватемала Антьгуа</strong> — дымчатый оттенок и карамельное послевкусие.</li>
+    </ul>
+    </div>
+    <div class="bean-column card">
+    <h3>Альтернатива (для гурманов)</h3>
+    <ul>
+        <li><strong>Гейша (Панама)</strong> — эксклюзивный сорт с чайными и жасминовыми тонами.</li>
+        <li><strong>Блу Маунтин (Ямайка)</strong> — мягкий, с орехово-сливочным профилем.</li>
+    </ul>
+    </div>
+    <div class="bean-column card">
+    <h3>Декаф (без кофеина)</h3>
+    <ul>
+        <li><strong>Швейцарский метод</strong> — без химии, с сохранением вкуса!</li>
+    </ul>
+    </div>
+</div>
+</section>
+
+
+        <div class="container" id="catalog">
+    <button type="button" class="btn" onclick="document.getElementById('contentDialog').showModal()">Посмотреть каталог</button>
+</div>
+
+        <dialog id="contentDialog">
+            <div>
+                <h2 class="coffee-name">Классический капучино</h2>
+                <h3 class="coffee-desc">Эспрессо, горячее молоко и молочная пена в равных пропорциях.</h3>
+                <h3 class="coffee-price">800 тенге.</h3>
+                <img src="img/капучинно.jpeg" class="capuch" alt="Капучинно">
+            </div>
+            <div>
+                <h2 class="coffee-name">Имбирный капучино</h2>
+                <h3 class="coffee-desc">С добавлением свежего имбиря и меда.</h3>
+                <h3 class="coffee-price">950 тенге.</h3>
+                <img src="img/имбирное кап.jfif" class="capuch" alt="Капучинно имбироне.">  
+            </div>
+            <div>
+                <h2 class="coffee-name">Классический латте</h2>
+                <h3 class="coffee-desc">Нежный кофейный напиток с молоком (1/3 эспрессо, 2/3 вспененного молока)</h3>
+                <h3 class="coffee-price">750 тенге.</h3>
+                <img src="img/latte.jpg" class="capuch" alt="Классический латте.">  
+            </div>
+            <div>
+                <h2 class="coffee-name">Ванильный латте</h2>
+                <h3 class="coffee-desc">Классический латте с ароматом ванили и воздушной молочной пеной.</h3>
+                <h3 class="coffee-price">850 тенге.</h3>
+                <img src="img/vanilalatte.webp" class="capuch" alt="Ванильный латте.">  
+            </div>
+            <br/>
+            <div>
+                <h2 class="coffee-name">Эспрессо</h2>
+                <h3 class="coffee-desc">Насыщенный эспрессо с бархатистой пенкой crema. Интенсивный вкус с нотами шоколада и карамели. 30 мл для истинных ценителей.</h3>
+                <h3 class="coffee-price">1100 тенге.</h3>
+                <img src="img/expresso.webp" class="capuch" alt="Классический эспрессо.">  
+            </div>
+            <div>
+                <h2 class="coffee-name">Американо</h2>
+                <h3 class="coffee-desc">Мягкий, но насыщенный вкус с сохранением кофейного аромата. Идеален для тех, кто любит более легкий, но бодрящий напиток.</h3>
+                <h3 class="coffee-price">1000 тенге.</h3>
+                <img src="img/americano.webp" class="capuch" alt="Американо">  
+            </div>
+            <button type="button" class="btn" onclick="document.getElementById('contentDialog').close()">Закрыть</button>
+        </dialog>
+    </div>
+    
+    
+
+    <section class="reviews-section">
+    <h2 style="text-align: center; margin-bottom: 40px;">Отзывы наших клиентов</h2>
+    
+    <!-- Контейнер для отзывов -->
+    <div id="reviewsContainer" class="reviews-container">
+        <!-- Отзывы будут загружаться сюда -->
+    </div>
+    
+    <!-- Форма для добавления отзывов -->
+    <div class="add-review-form">
+        <h3>Оставить свой отзыв</h3>
+        <form id="addReviewForm">
+            <div class="form-group">
+                <label for="reviewName">Ваше имя:</label>
+                <input type="text" id="reviewName" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Оценка:</label>
+                <div class="rating-stars">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                </div>
+                <input type="hidden" id="reviewRating" value="0" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="reviewText">Ваш отзыв:</label>
+                <textarea id="reviewText" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-review-btn">Отправить отзыв</button>
+        </form>
+    </div>
+</section>
+
+    
+    <section class="recommended-section">
+        <h2 style="text-align: center; margin-bottom: 40px;">Рекомендуем попробовать</h2>
+        <div class="recommended-container">
+            <div class="recommended-card">
+                <img src="img/vanilalatte.webp" alt="Ванильный латте" class="recommended-img">
+                <h3>Ванильный латте</h3>
+                <p>Самый популярный напиток среди наших гостей</p>
+            </div>
+            
+            <div class="recommended-card">
+                <img src="img/expresso.webp" alt="Еспрессо" class="recommended-img">
+                <h3>Эспрессо</h3>
+                <p>Лучший выбор для ценителей яркого вкуса</p>
+            </div>
+            
+            <div class="recommended-card">
+                <img src="img/имбирное кап.jfif" alt="Имбирный капучино" class="recommended-img">
+                <h3>Имбирный капучино</h3>
+                <p>Идеален для холодного времени года</p>
+            </div>
+        </div>
+    </section>
+    <div class="pimg3" id="vacancies">
+        <span class="ptext">ВАКАНСИИ И ШКОЛА БАРИСТА</span>
+    </div>
+
+    <section class="vacancies-section">
+        <h2 style="margin-bottom: 50px; font-size: 2.5rem;">Присоединяйтесь к нашей команде!</h2>
+        <div class="vacancy-container">
+            <div class="vacancy-card">
+                <h3 class="vacancy-title">Бариста</h3>
+                <div class="vacancy-item">
+                    <i class="fas fa-check-circle vacancy-icon"></i>
+                    <div>
+                        <strong>Обязанности:</strong> Приготовление кофейных напитков, работа с гостями, поддержание чистоты рабочего места
+                    </div>
+                </div>
+                <div class="vacancy-item">
+                    <i class="fas fa-user-tie vacancy-icon"></i>
+                    <div>
+                        <strong>Требования:</strong> Опыт работы приветствуется, но мы готовы обучить; доброжелательность, аккуратность
+                    </div>
+                </div>
+                <div class="vacancy-item">
+                    <i class="fas fa-gift vacancy-icon"></i>
+                    <div>
+                        <strong>Условия:</strong> Гибкий график, обучение, бесплатные кофейные напитки, бонусы
+                    </div>
+                </div>
+                <button class="apply-btn" onclick="document.getElementById('applyDialog').showModal()">
+                    <i class="fas fa-paper-plane"></i> Откликнуться
+                    
+                </button>
+            </div>
+            
+            <div class="vacancy-card">
+                <h3 class="vacancy-title">Ученик бариста</h3>
+                <div class="vacancy-item">
+                    <i class="fas fa-graduation-cap vacancy-icon"></i>
+                    <div>
+                        <strong>Программа:</strong> Полное обучение с нуля, практика с наставником, экзамен
+                    </div>
+                </div>
+                <div class="vacancy-item">
+                    <i class="fas fa-clock vacancy-icon"></i>
+                    <div>
+                        <strong>Срок обучения:</strong> 2 недели интенсивного курса + 1 месяц стажировки
+                    </div>
+                </div>
+                <div class="vacancy-item">
+                    <i class="fas fa-certificate vacancy-icon"></i>
+                    <div>
+                        <strong>Результат:</strong> Сертификат, гарантированное трудоустройство, старт карьеры бариста
+                    </div>
+                </div>
+                <button class="apply-btn" onclick="document.getElementById('applyDialog').showModal()">
+                    <i class="fas fa-info-circle"></i> Подробнее о школе
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="barista-school">
+        <div class="school-container">
+            <img src="img/schoolbarista.webp" alt="Школа бариста" class="school-img">
+            <div class="school-content">
+                <h3 class="school-title">Школа профессиональных бариста</h3>
+                <p>Наша авторская программа обучения поможет вам освоить искусство приготовления кофе с нуля или повысить свою квалификацию.</p>
+                
+                <div class="school-features">
+                    <div class="feature-item">
+                        <i class="fas fa-coffee feature-icon"></i>
+                        <div>Практические занятия на профессиональном оборудовании</div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-graduate feature-icon"></i>
+                        <div>Опытные преподаватели - чемпионы бариста</div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-award feature-icon"></i>
+                        <div>Сертификат международного образца</div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-briefcase feature-icon"></i>
+                        <div>Помощь в трудоустройстве после обучения</div>
+                    </div>
+                </div>
+                
+                <button class="register-btn" onclick="document.getElementById('applyDialog').showModal()">
+                    <i class="fas fa-pen-fancy"></i> Записаться на курс
+                </button>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section class="contacts-section" id="contacts">
+        <h2 style="text-align: center; margin-bottom: 50px; font-size: 2rem; color: #6F4E37;">Наши контакты</h2>
+        <div class="contacts-container">
+        <div class="elegant-contacts">
+    <div class="contact-item">
+    <a href="tel:+77777777777" class="contact-link">
+    <span class="contact-text">+7 (777) 777-77-77</span>
+    </a>
+    </div>
+    
+    <div class="contact-item">
+    <a href="mailto:cofehouse@gmail.com" class="contact-link">
+    <span class="contact-text">cofehouse@gmail.com</span>
+    </a>
+    </div>
+    
+    <div class="contact-item">
+    <span class="contact-text">г. Алматы, ул. Кофейная, 123</span>
+    </div>
+</div>
+</div>
+        </div>
+    </section>
+
+    
+    <dialog id="applyDialog" style="border-radius:15px;padding:30px;max-width:500px;border:2px solid #6F4E37">
+        <h3 style="color:#6F4E37;margin-bottom:20px;">Отклик на вакансию</h3>
+        <form>
+            <label style="display:block;margin-bottom:15px;">
+                Ваше имя:
+                <input type="text" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;margin-top:5px;">
+            </label>
+            <label style="display:block;margin-bottom:15px;">
+                Телефон:
+                <input type="tel" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;margin-top:5px;">
+            </label>
+            <label style="display:block;margin-bottom:20px;">
+                О себе (опыт, навыки):
+                <textarea style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;margin-top:5px;height:100px;"></textarea>
+            </label>
+            <div style="display:flex;justify-content:space-between;">
+                <button type="button" onclick="submitApplication()" 
+        style="background:#6F4E37;color:white;border:none;padding:10px 20px;border-radius:5px;cursor:pointer;">
+    Отправить
+</button>
+                <button type="button" onclick="document.getElementById('applyDialog').close()" 
+                        style="background:#ddd;border:none;padding:10px 20px;border-radius:5px;cursor:pointer;">
+                    Отмена
+                </button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="schoolDialog" style="border-radius:15px;padding:30px;max-width:600px;border:2px solid #6F4E37">
+        <h3 style="color:#6F4E37;margin-bottom:20px;">Запись в школу бариста</h3>
+        <div style="margin-bottom:20px;">
+            <p><strong>Ближайшие даты набора:</strong></p>
+            <ul style="margin-left:20px;">
+                <li>10 января - базовый курс</li>
+                <li>25 января - продвинутый курс</li>
+                <li>5 февраля - мастер-класс по латте-арту</li>
+            </ul>
+        </div>
+        <form>
+            <label style="display:block;margin-bottom:15px;">
+                Ваше имя:
+                <input type="text" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;margin-top:5px;">
+            </label>
+            <label style="display:block;margin-bottom:15px;">
+                Телефон:
+                <input type="tel" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;margin-top:5px;">
+            </label>
+            <label style="display:block;margin-bottom:15px;">
+                Выберите курс:
+                <select style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;margin-top:5px;">
+                    <option>Базовый курс (2 недели)</option>
+                    <option>Продвинутый курс (1 месяц)</option>
+                    <option>Мастер-класс по латте-арту</option>
+                </select>
+            </label>
+            <div style="display:flex;justify-content:space-between;margin-top:25px;">
+                <button type="button" onclick="alert('Вы успешно записаны на курс! Мы свяжемся с вами для подтверждения.'); document.getElementById('schoolDialog').close()" 
+                        style="background:#6F4E37;color:white;border:none;padding:10px 20px;border-radius:5px;cursor:pointer;">
+                    Записаться
+                </button>
+                <button type="button" onclick="document.getElementById('schoolDialog').close()" 
+                        style="background:#ddd;border:none;padding:10px 20px;border-radius:5px;cursor:pointer;">
+                    Закрыть
+                </button>
+            </div>
+        </form>
+    </dialog>
+
+    <div class="pimg1">
+        <span class="ptext">Если кофе то только у нас! Cofehouse!</span>
+    </div>
+    
+    <script src="js/script.js" defer></script>
+    <div style="text-align: center; margin: 50px 0;">
+    <button onclick="showAdminLogin()" style="background:#6F4E37; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+        <i class="fas fa-lock"></i> Вход в админ-центр
+    </button>
+</div>
+
+<!-- Модальное окно с вводом пароля -->
+<dialog id="adminLoginDialog" style="border-radius:15px;padding:30px;max-width:400px;border:2px solid #6F4E37">
+    <h3 style="margin-bottom:15px;color:#6F4E37;">Введите пароль администратора</h3>
+    <input type="password" id="adminPassword" placeholder="Пароль" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;">
+    <div style="margin-top:20px;display:flex;justify-content:space-between;">
+        <button onclick="checkAdminPassword()" style="background:#6F4E37;color:white;border:none;padding:10px 20px;border-radius:5px;">Войти</button>
+        <button onclick="document.getElementById('adminLoginDialog').close()" style="background:#ddd;border:none;padding:10px 20px;border-radius:5px;">Отмена</button>
+    </div>
+</dialog>
+
+<script>
+    function showAdminLogin() {
+        document.getElementById("adminLoginDialog").showModal();
+    }
+
+    function checkAdminPassword() {
+        const password = document.getElementById("adminPassword").value;
+        const correctPassword = "admin123"; // Замените на свой
+
+        if (password === correctPassword) {
+            sessionStorage.setItem("isAdmin", "true");
+            window.location.href = "admin.html"; // Перенаправление
+        } else {
+            alert("Неверный пароль!");
+        }
+    }
+function submitApplication() {
+    const name = document.querySelector('#applyDialog input[type="text"]').value;
+    const phone = document.querySelector('#applyDialog input[type="tel"]').value;
+    const about = document.querySelector('#applyDialog textarea').value;
+
+    if (!name || !phone || !about) {
+        alert("Пожалуйста, заполните все поля.");
+        return;
+    }
+
+    const application = {
+        name: name,
+        phone: phone,
+        about: about,
+        date: new Date().toLocaleString()
+    };
+
+    // Получаем уже сохраненные заявки (если есть)
+    const existing = JSON.parse(localStorage.getItem("applications") || "[]");
+    existing.push(application);
+
+    // Сохраняем обратно
+    localStorage.setItem("applications", JSON.stringify(existing));
+
+    alert("Ваша заявка отправлена! Мы свяжемся с вами в ближайшее время.");
+    document.getElementById("applyDialog").close();
+}
+
+const applications = JSON.parse(localStorage.getItem("applications") || "[]");
+applications.push({
+    name,
+    phone,
+    about,
+    date: new Date().toLocaleString()
+});
+localStorage.setItem("applications", JSON.stringify(applications));
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Инициализация отзывов
+    initReviews();
+
+    // Обработчик формы
+    document.getElementById('addReviewForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        addNewReview();
+    });
+});
+
+// Инициализация отзывов (при загрузке страницы)
+function initReviews() {
+    const reviewsContainer = document.getElementById('reviewsContainer');
+    reviewsContainer.innerHTML = '';
+
+    // Получаем отзывы из localStorage
+    let reviews = getReviewsFromStorage();
+
+    // Если нет сохраненных отзывов, создаем начальные
+    if (reviews.length === 0) {
+        reviews = [
+            {
+                id: 1,
+                name: "Алия Н.",
+                rating: 5,
+                comment: "Лучший кофе в городе! Особенно люблю их ванильный латте.",
+                date: new Date().toISOString()
+            },
+            {
+                id: 2,
+                name: "Дамир С.",
+                rating: 4,
+                comment: "Имбирный капучино - это нечто! Персонал очень дружелюбный.",
+                date: new Date().toISOString()
+            }
+        ];
+        saveReviewsToStorage(reviews);  // Сохраняем начальные отзывы
+    }
+
+    // Отображаем все отзывы
+    displayReviews(reviews);
+}
+
+// Получаем отзывы из localStorage
+function getReviewsFromStorage() {
+    try {
+        const reviewsJson = localStorage.getItem('coffeeShopReviews');
+        return reviewsJson ? JSON.parse(reviewsJson) : [];
+    } catch (e) {
+        console.error('Ошибка при чтении отзывов:', e);
+        return [];
+    }
+}
+
+// Сохраняем отзывы в localStorage
+function saveReviewsToStorage(reviews) {
+    try {
+        localStorage.setItem('coffeeShopReviews', JSON.stringify(reviews));
+    } catch (e) {
+        console.error('Ошибка при сохранении отзывов:', e);
+    }
+}
+
+// Отображаем все отзывы на странице
+function displayReviews(reviews) {
+    const container = document.getElementById('reviewsContainer');
+    container.innerHTML = '';
+
+    reviews.forEach(review => {
+        container.appendChild(createReviewElement(review));
+    });
+}
+
+// Создаем элемент отзыва
+function createReviewElement(review) {
+    const reviewElement = document.createElement('div');
+    reviewElement.className = 'review-card';
+
+    // Рейтинг звездами
+    const stars = document.createElement('div');
+    stars.className = 'stars';
+    for (let i = 1; i <= 5; i++) {
+        const star = document.createElement('i');
+        star.className = i <= review.rating ? 'fas fa-star' : 'far fa-star';
+        stars.appendChild(star);
+    }
+
+    // Текст отзыва
+    const text = document.createElement('p');
+    text.textContent = review.comment;
+
+    // Автор и дата
+    const author = document.createElement('div');
+    author.className = 'review-author';
+    author.innerHTML = `<i class="fas fa-user"></i> ${review.name} · ${formatDate(review.date)}`;
+
+    // Собираем все вместе
+    reviewElement.appendChild(stars);
+    reviewElement.appendChild(text);
+    reviewElement.appendChild(author);
+
+    return reviewElement;
+}
+
+// Форматирование даты
+function formatDate(dateString) {
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString('ru-RU', options);
+}
+
+// Добавляем новый отзыв
+function addNewReview() {
+    const nameInput = document.getElementById('name');
+    const ratingSelect = document.getElementById('rating');
+    const commentInput = document.getElementById('comment');
+
+    // Проверка заполнения полей
+    if (!nameInput.value.trim() || !commentInput.value.trim()) {
+        alert('Пожалуйста, заполните все поля');
+        return;
+    }
+
+    // Создаем новый отзыв
+    const newReview = {
+        id: Date.now(), // Используем timestamp как уникальный ID
+        name: nameInput.value.trim(),
+        rating: parseInt(ratingSelect.value),
+        comment: commentInput.value.trim(),
+        date: new Date().toISOString()
+    };
+
+    // Получаем текущие отзывы
+    const reviews = getReviewsFromStorage();
+
+    // Добавляем новый отзыв в массив
+    reviews.push(newReview);
+
+    // Сохраняем обновленный список отзывов
+    saveReviewsToStorage(reviews);
+
+    // Добавляем новый отзыв на страницу
+    document.getElementById('reviewsContainer').appendChild(createReviewElement(newReview));
+
+    // Очищаем форму
+    nameInput.value = '';
+    commentInput.value = '';
+    ratingSelect.value = '5';
+
+    // Показываем уведомление
+    showNotification('Спасибо за ваш отзыв!');
+}
+
+// Показываем уведомление
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.classList.add('fade-out');
+        setTimeout(() => notification.remove(), 500);
+    }, 3000);
+}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

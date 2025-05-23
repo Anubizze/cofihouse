@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин кофейных зерен | Cofehouse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/mainzerna.css">
+    <link rel="icon" type="image/png" href="img/iconcofe.png">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html#home"><i class="fas fa-home"></i> Главная</a></li>
+            <li><a href="index.html#about"><i class="fas fa-coffee"></i> О кофе</a></li>
+            <li><a href="index.html#menu"><i class="fas fa-list-alt"></i> Меню</a></li>
+            <li><a href="zernashop.html"><i class="fas fa-shopping-bag"></i> Магазин зерен</a></li>
+            <li><a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> Корзина <span id="cart-count">0</span></a></li>
+            <li><a href="index.html#vacancies"><i class="fas fa-briefcase"></i> Вакансии</a></li>
+            <li><a href="index.html#contacts"><i class="fas fa-phone-alt"></i> Контакты</a></li>
+        </ul>
+        <div class="overlay"></div>
+    </nav>
+
+    
+    <header class="header">
+        <div>
+            <h1>Магазин кофейных зерен</h1>
+            <p>Только премиальные сорта арабики с лучших плантаций мира. Свежая обжарка каждую неделю.</p>
+        </div>
+    </header>
+
+    
+    <div class="products-container">
+    <h2 class="section-title">Наши кофейные зерна</h2>
+    
+    <div class="products-grid">
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/ergachev.webp" alt="Эфиопия Иргачефф">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Эфиопия Иргачефф</h3>
+                <div class="product-origin">
+                    <i class="fas fa-globe-africa"></i>
+                    <span>Эфиопия, регион Сидамо</span>
+                </div>
+                <p class="product-description">
+                    Яркий цветочный аромат с нотами жасмина и цитрусов. 
+                    Средняя обжарка подчеркивает фруктовые оттенки.
+                </p>
+                <div class="product-options">
+                    <div class="weight-options">
+                        <div class="weight-option active" data-weight="250" data-base-price="4500">250г</div>
+                        <div class="weight-option" data-weight="500" data-base-price="8000">500г</div>
+                        <div class="weight-option" data-weight="1000" data-base-price="15000">1000г</div>
+                    </div>
+                    <div class="grind-options">
+                        <label class="grind-option">
+                            <input type="radio" name="grind-1" value="yes" checked> Молоть
+                        </label>
+                        <label class="grind-option">
+                            <input type="radio" name="grind-1" value="no"> Не молоть
+                        </label>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">4 500 ₸</span>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/supremo.webp" alt="Колумбия Супремо">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Колумбия Супремо</h3>
+                <div class="product-origin">
+                    <i class="fas fa-globe-americas"></i>
+                    <span>Колумбия, Антьокия</span>
+                </div>
+                <p class="product-description">
+                    Сбалансированный вкус с карамельными нотами и легкой кислинкой. 
+                    Идеален для эспрессо и фильтр-кофе.
+                </p>
+                <div class="product-options">
+                    <div class="weight-options">
+                        <div class="weight-option active" data-weight="250" data-base-price="3800">250г</div>
+                        <div class="weight-option" data-weight="500" data-base-price="7000">500г</div>
+                        <div class="weight-option" data-weight="1000" data-base-price="13000">1000г</div>
+                    </div>
+                    <div class="grind-options">
+                        <label class="grind-option">
+                            <input type="radio" name="grind-2" value="yes" checked> Молоть
+                        </label>
+                        <label class="grind-option">
+                            <input type="radio" name="grind-2" value="no"> Не молоть
+                        </label>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">3 800 ₸</span>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/brazilsantos.jfif" alt="Бразилия Сантос">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Бразилия Сантос</h3>
+                <div class="product-origin">
+                    <i class="fas fa-globe-americas"></i>
+                    <span>Бразилия, Сан-Паулу</span>
+                </div>
+                <p class="product-description">
+                    Мягкий ореховый вкус с шоколадными нотами. 
+                    Темная обжарка для насыщенного крепкого кофе.
+                </p>
+                <div class="product-options">
+                    <div class="weight-options">
+                        <div class="weight-option active" data-weight="250" data-base-price="3200">250г</div>
+                        <div class="weight-option" data-weight="500" data-base-price="6000">500г</div>
+                        <div class="weight-option" data-weight="1000" data-base-price="11000">1000г</div>
+                    </div>
+                    <div class="grind-options">
+                        <label class="grind-option">
+                            <input type="radio" name="grind-3" value="yes" checked> Молоть
+                        </label>
+                        <label class="grind-option">
+                            <input type="radio" name="grind-3" value="no"> Не молоть
+                        </label>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">3 200 ₸</span>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cofeкения.webp" alt="Кения AA">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Кения AA</h3>
+                <div class="product-origin">
+                    <i class="fas fa-globe-africa"></i>
+                    <span>Кения, Ньери</span>
+                </div>
+                <p class="product-description">
+                    Яркий ягодный вкус с винными акцентами. 
+                    Высокогорная арабика с сложным вкусовым профилем.
+                </p>
+                <div class="product-options">
+                    <div class="weight-options">
+                        <div class="weight-option active" data-weight="250" data-base-price="5000">250г</div>
+                        <div class="weight-option" data-weight="500" data-base-price="9000">500г</div>
+                        <div class="weight-option" data-weight="1000" data-base-price="17000">1000г</div>
+                    </div>
+                    <div class="grind-options">
+                        <label class="grind-option">
+                            <input type="radio" name="grind-4" value="yes" checked> Молоть
+                        </label>
+                        <label class="grind-option">
+                            <input type="radio" name="grind-4" value="no"> Не молоть
+                        </label>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">5 000 ₸</span>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/gvatant.webp" alt="Гватемала Антьгуа">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Гватемала Антьгуа</h3>
+                <div class="product-origin">
+                    <i class="fas fa-globe-americas"></i>
+                    <span>Гватемала, Антьгуа</span>
+                </div>
+                <p class="product-description">
+                    Дымчатый оттенок с карамельным послевкусием. 
+                    Вулканические почвы придают особый минеральный оттенок.
+                </p>
+                <div class="product-options">
+                    <div class="weight-options">
+                        <div class="weight-option active" data-weight="250" data-base-price="4200">250г</div>
+                        <div class="weight-option" data-weight="500" data-base-price="8000">500г</div>
+                        <div class="weight-option" data-weight="1000" data-base-price="15000">1000г</div>
+                    </div>
+                    <div class="grind-options">
+                        <label class="grind-option">
+                            <input type="radio" name="grind-5" value="yes" checked> Молоть
+                        </label>
+                        <label class="grind-option">
+                            <input type="radio" name="grind-5" value="no"> Не молоть
+                        </label>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">4 200 ₸</span>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/italy2.jpg" alt="Итальянская смесь">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Итальянская смесь</h3>
+                <div class="product-origin">
+                    <i class="fas fa-globe-europe"></i>
+                    <span>Смесь кофе нескольких городов Италии</span>
+                </div>
+                <p class="product-description">
+                    Классическая эспрессо-смесь с плотным телом и горьковато-шоколадными нотами. 
+                    Идеальна для капучино.
+                </p>
+                <div class="product-options">
+                    <div class="weight-options">
+                        <div class="weight-option active" data-weight="250" data-base-price="3900">250г</div>
+                        <div class="weight-option" data-weight="500" data-base-price="7500">500г</div>
+                        <div class="weight-option" data-weight="1000" data-base-price="14000">1000г</div>
+                    </div>
+                    <div class="grind-options">
+                        <label class="grind-option">
+                            <input type="radio" name="grind-6" value="yes" checked> Молоть
+                        </label>
+                        <label class="grind-option">
+                            <input type="radio" name="grind-6" value="no"> Не молоть
+                        </label>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">3 900 ₸</span>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="recommended-section">
+    <div class="recommended-container">
+        <h2 class="recommended-title">Рекомендуем попробовать</h2>
+        <div class="recommended-products">
+    
+    <div class="recommended-product">
+        <img src="img/ergachev.webp" alt="Эфиопия Иргачефф">
+        <div class="recommended-info">
+            <div class="recommended-name">Эфиопия Иргачефф</div>
+            <div class="recommended-price">4 500 ₸</div>
+            <button class="recommended-btn" data-target="product1">Подробнее</button>
+        </div>
+    </div>
+    
+    
+    <div class="recommended-product">
+        <img src="img/gvatant.webp" alt="Гватемала Антьгуа">
+        <div class="recommended-info">
+            <div class="recommended-name">Гватемала Антьгуа</div>
+            <div class="recommended-price">4 200 ₸</div>
+            <button class="recommended-btn" data-target="product5">Подробнее</button>
+        </div>
+    </div>
+    
+    
+    <div class="recommended-product">
+        <img src="img/italy2.jpg" alt="Итальянская смесь">
+        <div class="recommended-info">
+            <div class="recommended-name">Итальянская смесь</div>
+            <div class="recommended-price">3 900 ₸</div>
+            <button class="recommended-btn" data-target="product6">Подробнее</button>
+        </div>
+    </div>
+    
+    
+    <div class="recommended-product">
+        <img src="img/cofeкения.webp" alt="Кения AA">
+        <div class="recommended-info">
+            <div class="recommended-name">Кения AA</div>
+            <div class="recommended-price">5 000 ₸</div>
+            <button class="recommended-btn" data-target="product4">Подробнее</button>
+        </div>
+    </div>
+</div>
+
+<!-- Добавьте ID к карточкам продуктов -->
+<div class="product-card" id="product1">
+    <!-- Содержимое карточки Эфиопия Иргачефф -->
+</div>
+
+<div class="product-card" id="product5">
+    <!-- Содержимое карточки Гватемала Антьгуа -->
+</div>
+
+<div class="product-card" id="product6">
+    <!-- Содержимое карточки Итальянская смесь -->
+</div>
+
+<div class="product-card" id="product4">
+    <!-- Содержимое карточки Кения AA -->
+</div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Секция отзывов -->
+<section class="reviews-section">
+    <div class="reviews-container">
+        <h2 class="reviews-title">Отзывы наших клиентов</h2>
+        <div class="reviews-grid">
+            <!-- Отзыв 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Алия">
+                    </div>
+                    <div>
+                        <div class="review-author">Алия</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-product">Эфиопия Иргачефф</div>
+                <div class="review-text">
+                    Потрясающий кофе с нежным цветочным ароматом. Пью каждое утро и каждый раз наслаждаюсь вкусом. 
+                    Рекомендую всем, кто любит яркие фруктовые нотки в кофе.
+                </div>
+            </div>
+            
+            <!-- Отзыв 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Арман">
+                    </div>
+                    <div>
+                        <div class="review-author">Арман</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-product">Колумбия Супремо</div>
+                <div class="review-text">
+                    Отличный сбалансированный кофе. Использую для эспрессо - получается идеальная крема и насыщенный вкус. 
+                    Заказываю уже третий раз и не разочаровался ни разу.
+                </div>
+            </div>
+            
+            <!-- Отзыв 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Айгерим">
+                    </div>
+                    <div>
+                        <div class="review-author">Айгерим</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-product">Гватемала Антьгуа</div>
+                <div class="review-text">
+                    Любимый кофе всей семьи! Особенно нравится его дымчатый оттенок и долгое карамельное послевкусие. 
+                    Заказываем килограмм раз в месяц - хватает надолго, так как качество на высоте.
+                </div>
+            </div>
+            
+            <!-- Отзыв 4 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Дамир">
+                    </div>
+                    <div>
+                        <div class="review-author">Дамир</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-product">Итальянская смесь</div>
+                <div class="review-text">
+                    Отличная смесь для капучино и латте. Дает хорошую пенку и насыщенный вкус. 
+                    Единственное - для эспрессо мне показался немного легковатым, но это дело вкуса.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="add-review-form">
+    <h3>Оставить свой отзыв</h3>
+    <form id="reviewForm">
+        <div class="form-group">
+            <label for="reviewName">Ваше имя:</label>
+            <input type="text" id="reviewName" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="reviewProduct">Выберите продукт:</label>
+            <select id="reviewProduct" required>
+                <option value="">-- Выберите кофе --</option>
+                <option value="Эфиопия Иргачефф">Эфиопия Иргачефф</option>
+                <option value="Колумбия Супремо">Колумбия Супремо</option>
+                <option value="Бразилия Сантос">Бразилия Сантос</option>
+                <option value="Кения AA">Кения AA</option>
+                <option value="Гватемала Антьгуа">Гватемала Антьгуа</option>
+                <option value="Итальянская смесь">Итальянская смесь</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Оценка:</label>
+            <div class="rating-stars">
+                <i class="far fa-star" data-rating="1"></i>
+                <i class="far fa-star" data-rating="2"></i>
+                <i class="far fa-star" data-rating="3"></i>
+                <i class="far fa-star" data-rating="4"></i>
+                <i class="far fa-star" data-rating="5"></i>
+            </div>
+            <input type="hidden" id="reviewRating" value="0" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="reviewText">Ваш отзыв:</label>
+            <textarea id="reviewText" rows="4" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-review-btn">Отправить отзыв</button>
+    </form>
+</div>
+</section>
+
+<!-- Подключение иконок Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <div style="text-align: center;">
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Вернуться на главную</a>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>© 2025 Cofehouse. Все права защищены.</p>
+        <p>г. Семей. Улица., Кофейная 77</p>
+        <p>Телефон: +7 (777) 777-77-77</p>
+    </footer>
+
+    <script src="js/script.js">
+    </script>
+    <div id="cart" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Ваша корзина</h2>
+            <ul id="cart-items"></ul>
+            <div class="cart-footer">
+                <span id="cart-total">0 ₸</span>
+                <button id="checkout-btn">Перейти к оформлению</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartCount = document.getElementById('cart-count');
+        const cartModal = document.getElementById('cart');
+        const closeCart = document.querySelector('.close-cart');
+        const cartItemsList = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+
+        // Инициализация выбора веса
+        document.querySelectorAll('.weight-option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Удаляем активный класс у всех вариантов в этой группе
+                this.parentNode.querySelectorAll('.weight-option').forEach(opt => {
+                    opt.classList.remove('active');
+                });
+                
+                // Добавляем активный класс текущему варианту
+                this.classList.add('active');
+                
+                // Обновляем цену
+                updateProductPrice(this.closest('.product-card'));
+            });
+        });
+
+        // Функция обновления цены продукта
+        function updateProductPrice(productCard) {
+            const activeWeight = productCard.querySelector('.weight-option.active');
+            const basePrice = parseInt(activeWeight.getAttribute('data-base-price'));
+            const priceElement = productCard.querySelector('.product-price');
+            
+            // Форматируем цену с пробелами между тысячами
+            priceElement.textContent = basePrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₸';
+        }
+
+        // Функция обновления корзины
+        function updateCart() {
+            cartItemsList.innerHTML = '';
+            let total = 0;
+            cart.forEach((item, index) => {
+                total += item.price;
+                const li = document.createElement('li');
+                li.textContent = `${item.title} (${item.weight}г) — ${item.price} ₸`;
+                
+                // Добавляем кнопку удаления
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Удалить';
+                deleteButton.classList.add('delete-item');
+                deleteButton.addEventListener('click', () => removeItem(index));
+
+                li.appendChild(deleteButton);
+                cartItemsList.appendChild(li);
+            });
+            cartTotal.textContent = `${total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} ₸`;
+            cartCount.textContent = cart.length;
+        }
+
+        // Удаление товара из корзины
+        function removeItem(index) {
+            cart.splice(index, 1);  // Удаляем товар по индексу
+            updateCart();  // Обновляем корзину
+            saveCart();  // Сохраняем корзину в localStorage
+        }
+
+        // Сохранение корзины в localStorage
+        function saveCart() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // Добавление товара в корзину
+        document.querySelectorAll('.add-to-cart').forEach((button) => {
+            button.addEventListener('click', (e) => {
+                const productCard = e.target.closest('.product-card');
+                const title = productCard.querySelector('.product-title').innerText;
+                const activeWeight = productCard.querySelector('.weight-option.active');
+                const weight = activeWeight.getAttribute('data-weight');
+                const price = parseInt(activeWeight.getAttribute('data-base-price'));
+                const grindOption = productCard.querySelector('input[name^="grind-"]:checked').value;
+                const grindText = grindOption === 'yes' ? 'молотый' : 'в зернах';
+
+                cart.push({ 
+                    title, 
+                    price, 
+                    weight,
+                    grind: grindText,
+                    fullTitle: `${title} (${weight}г, ${grindText})`
+                });
+                updateCart();
+                saveCart();
+            });
+        });
+
+        // Открытие корзины
+        document.getElementById('cart-icon').addEventListener('click', () => {
+            cartModal.style.display = 'block';
+        });
+
+        // Закрытие корзины
+        closeCart.addEventListener('click', () => {
+            cartModal.style.display = 'none';
+        });
+
+        // Инициализация корзины при загрузке страницы
+        updateCart();
+
+        document.getElementById('checkout-btn').addEventListener('click', function() {
+    if (cart.length === 0) {
+        alert('Ваша корзина пуста');
+        return;
+    }
+    window.location.href = 'checkout.html';
+});
+
+    document.querySelectorAll('.recommended-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                // Плавная прокрутка к элементу с отступом сверху
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+                
+                // Добавляем подсветку на 2 секунды
+                targetElement.style.boxShadow = '0 0 0 3px rgba(139, 69, 19, 0.5)';
+                setTimeout(() => {
+                    targetElement.style.boxShadow = '';
+                }, 2000);
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const cartCount = document.getElementById('cart-count');
+    let cartItems = 0;
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', () => {
+            cartItems += 1;
+            cartCount.textContent = cartItems;
+            alert('Товар добавлен в корзину!');
+        });
+    });   
+});
+
+    document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            const overlay = document.querySelector('.overlay');
+            
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                overlay.classList.toggle('active');
+                
+                // Блокировка скролла при открытом меню
+                if (navMenu.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Закрытие меню при клике на оверлей
+            overlay.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                this.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            
+            // Закрытие меню при клике на ссылку
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        overlay.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // Обработка звезд рейтинга
+    const stars = document.querySelectorAll('.rating-stars i');
+    const ratingInput = document.getElementById('reviewRating');
+    
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            const rating = parseInt(this.getAttribute('data-rating'));
+            ratingInput.value = rating;
+            
+            stars.forEach((s, index) => {
+                if (index < rating) {
+                    s.classList.remove('far');
+                    s.classList.add('fas', 'active');
+                } else {
+                    s.classList.remove('fas', 'active');
+                    s.classList.add('far');
+                }
+            });
+        });
+    });
+    
+    // Загружаем сохраненные отзывы из localStorage
+    loadReviews();
+    
+    // Обработка формы
+    const reviewForm = document.getElementById('reviewForm');
+    const reviewsContainer = document.querySelector('.reviews-grid');
+    
+    reviewForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('reviewName').value.trim();
+        const product = document.getElementById('reviewProduct').value;
+        const rating = parseInt(ratingInput.value);
+        const text = document.getElementById('reviewText').value.trim();
+        
+        if (rating === 0) {
+            alert('Пожалуйста, поставьте оценку');
+            return;
+        }
+        
+        // Создаем новый отзыв
+        const review = {
+            name: name,
+            product: product,
+            rating: rating,
+            text: text
+        };
+        
+        // Сохраняем новый отзыв в localStorage
+        saveReviewToLocalStorage(review);
+        
+        // Добавляем новый отзыв в список
+        const reviewCard = createReviewCard(review);
+        reviewsContainer.insertBefore(reviewCard, reviewsContainer.firstChild);
+        
+        // Очищаем форму
+        reviewForm.reset();
+        stars.forEach(star => {
+            star.classList.remove('fas', 'active');
+            star.classList.add('far');
+        });
+        ratingInput.value = '0';
+        
+        // Показываем сообщение
+        alert('Спасибо за ваш отзыв!');
+    });
+});
+
+// Функция для сохранения отзыва в localStorage
+function saveReviewToLocalStorage(review) {
+    let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+    reviews.push(review);
+    localStorage.setItem('reviews', JSON.stringify(reviews));
+}
+
+// Функция для загрузки отзывов из localStorage
+function loadReviews() {
+    const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+    const reviewsContainer = document.querySelector('.reviews-grid');
+    
+    reviews.forEach(review => {
+        const reviewCard = createReviewCard(review);
+        reviewsContainer.appendChild(reviewCard);
+    });
+}
+
+// Функция для создания карточки отзыва
+function createReviewCard(review) {
+    const reviewCard = document.createElement('div');
+    reviewCard.className = 'review-card';
+    reviewCard.innerHTML = `
+        <div class="review-header">
+            <div class="review-avatar">
+                <img src="https://ui-avatars.com/api/?name=${encodeURIComponent(review.name)}&background=8B4513&color=fff" alt="${review.name}">
+            </div>
+            <div>
+                <div class="review-author">${review.name}</div>
+                <div class="review-rating">
+                    ${'<i class="fas fa-star"></i>'.repeat(review.rating)}${'<i class="far fa-star"></i>'.repeat(5 - review.rating)}
+                </div>
+            </div>
+        </div>
+        <div class="review-product">${review.product}</div>
+        <div class="review-text">${review.text}</div>
+    `;
+    return reviewCard;
+}
+    </script>
+</body>
+</html>
